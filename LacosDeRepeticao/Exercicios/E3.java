@@ -17,6 +17,7 @@ public class E3 {
         System.out.print("\nDigite uma idade: ");
 
         int idade = sc.nextInt();
+        
 
         while (idade >= 0) {
             if (idade < 21) {
