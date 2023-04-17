@@ -12,12 +12,10 @@ public class E3 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-
         int pessoaMenor21 = 0, pessoaMaior50 = 0;
         System.out.print("\nDigite uma idade: ");
 
         int idade = sc.nextInt();
-        
 
         while (idade >= 0) {
             if (idade < 21) {
@@ -29,6 +27,7 @@ public class E3 {
             idade = sc.nextInt();
         }
 
+        System.out.println("==================================================");
         System.out.println("Total de pessoas menores de 21 anos: " + pessoaMenor21);
         System.out.println("Total de pessoas maiores de 50 anos: " + pessoaMaior50);
 
