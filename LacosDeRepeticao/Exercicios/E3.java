@@ -18,7 +18,7 @@ public class E3 {
 
         int idade = sc.nextInt();
 
-        while (idade > 0) {
+        while (idade >= 0) {
             if (idade < 21) {
                 pessoaMenor21++;
             } else if (idade > 50) {
