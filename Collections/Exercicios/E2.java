@@ -37,13 +37,12 @@ public class E2 {
 
         // Verificando se o numero existe na lista
         System.out.println("====================");
-        for (int i = 0; i < numeros.size(); i++) {
-            if (numeros.get(i) == buscador) {
-                System.out.printf("O número %d está localizado na posição: %d\n", buscador, i);
+            if (numeros.contains(buscador)) {
+                System.out.printf("O número %d está localizado na posição: %d\n", buscador,numeros.indexOf(buscador));
                 System.out.println("====================");
                 return;
             }
-        }
+
         System.out.printf("O número %d não foi encontrado!\n", buscador);
         System.out.println("====================");
 
