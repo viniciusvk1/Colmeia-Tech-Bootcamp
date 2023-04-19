@@ -36,14 +36,12 @@ public class E4 {
         int buscador = sc.nextInt();
 
         // Criando a busca definida pelo usuario
-        for (Integer buscaSet:numeros) {
-            if (buscador == buscaSet){
-                System.out.printf("O número %d foi encontrado!", buscaSet);
-                return;
-            }
+        if (numeros.contains(buscador)) {
+            System.out.printf("O número %d foi encontrado!", buscador);
+            return;
         }
 
-        System.out.printf("O número %d não foi encontrado!",buscador);
+        System.out.printf("O número %d não foi encontrado!", buscador);
 
         sc.close();
     }
