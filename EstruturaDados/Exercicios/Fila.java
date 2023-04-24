@@ -66,8 +66,6 @@ public class Fila {
                     }
 
 
-
-
                     /*
                     Sem iterator
                     System.out.println("Listando os clientes na fila: ");

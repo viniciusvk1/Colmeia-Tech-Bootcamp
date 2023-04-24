@@ -51,7 +51,7 @@ public class Pilha {
                     sc.nextLine();
                     nomeLivro = sc.nextLine();
                     livros.push(nomeLivro);
-                    System.out.println("Livro adicionado com sucesso!");
+                    System.out.printf("Livro %s adicionado com sucesso! \n", nomeLivro);
                     break;
 
                 case 2:
@@ -76,14 +76,33 @@ public class Pilha {
 
                 case 3:
 
+                case 3:
                     if (livros.size() == 0) {
                         System.out.println("Pilha vazia!");
                     } else {
                         System.out.println("Retirando um livro da pilha: ");
-                        livros.pop();
-                        System.out.println("Retirado o livro no topo com sucesso!");
+                        System.out.print("Digite o nome do livro que deseja retirar: ");
+                        nomeLivro = sc.next();
+                        boolean encontrou = false;
+
+                        Iterator<String> iterator = livros.iterator();
+                        while (iterator.hasNext()) {
+                            String livro = iterator.next();
+                            if (livro.equals(nomeLivro)) {
+                                iterator.remove();
+                                System.out.printf("Livro \"%s\" removido com sucesso!\n", nomeLivro);
+                                encontrou = true;
+                                break;
+                            }
+                        }
+
+                        if (!encontrou) {
+                            System.out.printf("Livro \"%s\" não encontrado!\n", nomeLivro);
+                        }
                     }
                     break;
+
+                break;
 
                 case 0:
                     System.out.println("Saindo do programa...");
