@@ -75,8 +75,6 @@ public class Pilha {
                     break;
 
                 case 3:
-
-                case 3:
                     if (livros.size() == 0) {
                         System.out.println("Pilha vazia!");
                     } else {
@@ -101,8 +99,6 @@ public class Pilha {
                         }
                     }
                     break;
-
-                break;
 
                 case 0:
                     System.out.println("Saindo do programa...");
